@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rediger Stjerneøredobber – Sweetcharm</title>
+  <meta name="description" content="Hjemmelagde charms og tilbehør">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/sweetcharm-demo/css/style.css">
+  <link rel="icon" href="/sweetcharm-demo/img/seed/hjerte.svg" type="image/svg+xml">
+  <meta name="csrf-token" content="287c9a541e4f5a816e5db1b04af21bbafb3632225f8c2cef">
+</head>
+<body class="admin is-demo">
+<div class="demo-banner">Demoversjon for tilbakemelding – ingen bestillinger sendes og endringer lagres ikke.</div>
+
+  <header class="admin-header">
+    <a class="logo logo--small" href="/sweetcharm-demo/admin/"><span class="logo__kicker">Admin</span><span class="logo__name">Sweetcharm</span></a>
+    <nav class="admin-nav">
+      <a href="/sweetcharm-demo/admin/" class="">Oversikt</a>
+      <a href="/sweetcharm-demo/admin/produkter/" class="active">Produkter</a>
+      <a href="/sweetcharm-demo/admin/ordrer/" class="">Bestillinger <span class="pill">1</span></a>
+      <a href="/sweetcharm-demo/admin/innstillinger/" class="">Innstillinger</a>
+    </nav>
+    <div class="admin-header__right">
+      <a href="/sweetcharm-demo/" target="_blank" rel="noopener">Se butikken ↗</a>
+      <form method="post" action="/sweetcharm-demo/admin/logg-ut/"><input type="hidden" name="_csrf" value="287c9a541e4f5a816e5db1b04af21bbafb3632225f8c2cef"><button class="linklike">Logg ut</button></form>
+    </div>
+  </header>
+  <main class="admin-main">
+  
+
+
+
+
+<div class="admin-title">
+  <h1>Stjerneøredobber</h1>
+  <a href="/sweetcharm-demo/admin/produkter/">← Tilbake til produkter</a>
+</div>
+
+<form method="post" action="/sweetcharm-demo/admin/produkter/6c29db92e37b10c5/" enctype="multipart/form-data" class="form product-form">
+  <input type="hidden" name="_csrf" value="287c9a541e4f5a816e5db1b04af21bbafb3632225f8c2cef">
+  <div class="panel">
+    <h2>Detaljer</h2>
+    <label>Navn<input name="name" value="Stjerneøredobber" required maxlength="120"></label>
+    <label>Beskrivelse<textarea name="description" rows="6">Små, lette øredobber med stjerner som fanger lyset. Nikkelfrie.</textarea></label>
+    <div class="form__row form__row--3">
+      <label>Pris (kr)<input name="price" value="229" inputmode="decimal" required></label>
+      <label>Kategori
+        <select name="category">
+          
+          <option >Charms</option><option >Halskjeder</option><option >Armbånd</option><option selected>Øredobber</option><option >Ringer</option><option >Tilbehør</option>
+        </select>
+      </label>
+      <label>Antall på lager<input type="number" name="stock" value="9" min="0"></label>
+    </div>
+    <div class="checks">
+      <label class="check"><input type="checkbox" name="active" checked> Synlig i butikken</label>
+      <label class="check"><input type="checkbox" name="isNew" > Merk som «Nyhet»</label>
+      <label class="check"><input type="checkbox" name="personal" > Merk som «Gjør den personlig»</label>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Bilder</h2>
+    
+      <p class="muted small">Velg hvilket bilde som skal være hovedbilde, eller merk bilder som skal fjernes.</p>
+      <div class="image-grid">
+        
+          <div class="image-item">
+            <img src="/sweetcharm-demo/img/seed/stjerne.svg" alt="">
+            <label class="check"><input type="radio" name="mainImage" value="/sweetcharm-demo/img/seed/stjerne.svg" checked> Hovedbilde</label>
+            <label class="check danger"><input type="checkbox" name="removeImage" value="/sweetcharm-demo/img/seed/stjerne.svg"> Fjern</label>
+          </div>
+        
+      </div>
+    
+    <label class="dropzone" data-dropzone>
+      <input type="file" name="images" accept="image/jpeg,image/png,image/webp,image/gif" multiple data-file-input>
+      <span class="dropzone__text"><strong>Last opp bilder</strong><br>Dra og slipp, eller klikk for å velge. JPG, PNG, WEBP eller GIF, maks 10 MB per bilde.</span>
+      <div class="image-grid image-grid--preview" data-preview></div>
+    </label>
+  </div>
+
+  <div class="form-actions">
+    <button class="btn">Lagre endringer</button>
+    <a href="/sweetcharm-demo/produkt/stjerneoredobber/" target="_blank" rel="noopener">Se i butikken ↗</a>
+  </div>
+</form>
+
+
+<form method="post" action="/sweetcharm-demo/admin/produkter/6c29db92e37b10c5/slett/" class="danger-zone" data-confirm="Er du sikker på at du vil slette «Stjerneøredobber»? Dette kan ikke angres.">
+  <input type="hidden" name="_csrf" value="287c9a541e4f5a816e5db1b04af21bbafb3632225f8c2cef">
+  <button class="btn btn--danger">Slett produkt</button>
+</form>
+
+
+  </main>
+
+<script>window.DEMO={"base":"/sweetcharm-demo","page":"/admin/produkter/6c29db92e37b10c5","thanks":"/sweetcharm-demo/bestilling/02755b7acb83bdf7/","admin":"/sweetcharm-demo/admin/","cart":"/sweetcharm-demo/handlekurv/"}</script>
+<script src="/sweetcharm-demo/js/demo.js"></script>
+<script src="/sweetcharm-demo/js/main.js" defer></script>
+</body>
+</html>
+

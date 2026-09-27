@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oversikt – Sweetcharm</title>
+  <meta name="description" content="Hjemmelagde charms og tilbehør">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/sweetcharm-demo/css/style.css">
+  <link rel="icon" href="/sweetcharm-demo/img/seed/hjerte.svg" type="image/svg+xml">
+  <meta name="csrf-token" content="287c9a541e4f5a816e5db1b04af21bbafb3632225f8c2cef">
+</head>
+<body class="admin is-demo">
+<div class="demo-banner">Demoversjon for tilbakemelding – ingen bestillinger sendes og endringer lagres ikke.</div>
+
+  <header class="admin-header">
+    <a class="logo logo--small" href="/sweetcharm-demo/admin/"><span class="logo__kicker">Admin</span><span class="logo__name">Sweetcharm</span></a>
+    <nav class="admin-nav">
+      <a href="/sweetcharm-demo/admin/" class="active">Oversikt</a>
+      <a href="/sweetcharm-demo/admin/produkter/" class="">Produkter</a>
+      <a href="/sweetcharm-demo/admin/ordrer/" class="">Bestillinger <span class="pill">1</span></a>
+      <a href="/sweetcharm-demo/admin/innstillinger/" class="">Innstillinger</a>
+    </nav>
+    <div class="admin-header__right">
+      <a href="/sweetcharm-demo/" target="_blank" rel="noopener">Se butikken ↗</a>
+      <form method="post" action="/sweetcharm-demo/admin/logg-ut/"><input type="hidden" name="_csrf" value="287c9a541e4f5a816e5db1b04af21bbafb3632225f8c2cef"><button class="linklike">Logg ut</button></form>
+    </div>
+  </header>
+  <main class="admin-main">
+  
+
+
+
+<div class="admin-title">
+  <h1>Oversikt</h1>
+  <a class="btn" href="/sweetcharm-demo/admin/produkter/ny/">+ Nytt produkt</a>
+</div>
+<div class="stats">
+  <div class="stat"><span class="stat__num">8</span><span>Synlige produkter (av 8)</span></div>
+  <div class="stat"><span class="stat__num">1</span><span>Nye bestillinger</span></div>
+  <div class="stat"><span class="stat__num">3</span><span>Bestillinger totalt</span></div>
+  <div class="stat"><span class="stat__num">kr 1 632</span><span>Omsetning (ekskl. kansellerte)</span></div>
+</div>
+
+<div class="admin-cols">
+  <section class="panel">
+    <div class="panel__head"><h2>Siste bestillinger</h2><a href="/sweetcharm-demo/admin/ordrer/">Se alle →</a></div>
+    
+      <table class="table">
+        <thead><tr><th>#</th><th>Kunde</th><th>Dato</th><th>Status</th><th class="num">Sum</th></tr></thead>
+        <tbody>
+        
+          <tr data-href="/sweetcharm-demo/admin/ordrer/02755b7acb83bdf7/">
+            <td><a href="/sweetcharm-demo/admin/ordrer/02755b7acb83bdf7/">1003</a></td>
+            <td>Kari Nordmann</td>
+            <td>27. sep. 2026, 16:19</td>
+            <td><span class="status status--ny">Ny</span></td>
+            <td class="num">kr 477</td>
+          </tr>
+        
+          <tr data-href="/sweetcharm-demo/admin/ordrer/eb67547b7d1950d5/">
+            <td><a href="/sweetcharm-demo/admin/ordrer/eb67547b7d1950d5/">1002</a></td>
+            <td>Sara Berg</td>
+            <td>27. sep. 2026, 16:19</td>
+            <td><span class="status status--betalt">Betalt</span></td>
+            <td class="num">kr 408</td>
+          </tr>
+        
+          <tr data-href="/sweetcharm-demo/admin/ordrer/4341cd4f9216f305/">
+            <td><a href="/sweetcharm-demo/admin/ordrer/4341cd4f9216f305/">1001</a></td>
+            <td>Ingrid Hansen</td>
+            <td>27. sep. 2026, 16:19</td>
+            <td><span class="status status--sendt">Sendt</span></td>
+            <td class="num">kr 747</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    
+  </section>
+  <section class="panel">
+    <div class="panel__head"><h2>Lite på lager</h2></div>
+    <p class="muted">Alt ser bra ut 🎉</p>
+  </section>
+</div>
+
+  </main>
+
+<script>window.DEMO={"base":"/sweetcharm-demo","page":"/admin","thanks":"/sweetcharm-demo/bestilling/02755b7acb83bdf7/","admin":"/sweetcharm-demo/admin/","cart":"/sweetcharm-demo/handlekurv/"}</script>
+<script src="/sweetcharm-demo/js/demo.js"></script>
+<script src="/sweetcharm-demo/js/main.js" defer></script>
+</body>
+</html>
+

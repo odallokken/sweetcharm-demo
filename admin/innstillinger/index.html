@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Innstillinger – Sweetcharm</title>
+  <meta name="description" content="Hjemmelagde charms og tilbehør">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/sweetcharm-demo/css/style.css">
+  <link rel="icon" href="/sweetcharm-demo/img/seed/hjerte.svg" type="image/svg+xml">
+  <meta name="csrf-token" content="287c9a541e4f5a816e5db1b04af21bbafb3632225f8c2cef">
+</head>
+<body class="admin is-demo">
+<div class="demo-banner">Demoversjon for tilbakemelding – ingen bestillinger sendes og endringer lagres ikke.</div>
+
+  <header class="admin-header">
+    <a class="logo logo--small" href="/sweetcharm-demo/admin/"><span class="logo__kicker">Admin</span><span class="logo__name">Sweetcharm</span></a>
+    <nav class="admin-nav">
+      <a href="/sweetcharm-demo/admin/" class="">Oversikt</a>
+      <a href="/sweetcharm-demo/admin/produkter/" class="">Produkter</a>
+      <a href="/sweetcharm-demo/admin/ordrer/" class="">Bestillinger <span class="pill">1</span></a>
+      <a href="/sweetcharm-demo/admin/innstillinger/" class="active">Innstillinger</a>
+    </nav>
+    <div class="admin-header__right">
+      <a href="/sweetcharm-demo/" target="_blank" rel="noopener">Se butikken ↗</a>
+      <form method="post" action="/sweetcharm-demo/admin/logg-ut/"><input type="hidden" name="_csrf" value="287c9a541e4f5a816e5db1b04af21bbafb3632225f8c2cef"><button class="linklike">Logg ut</button></form>
+    </div>
+  </header>
+  <main class="admin-main">
+  
+
+
+
+<div class="admin-title"><h1>Innstillinger</h1></div>
+<form method="post" action="/sweetcharm-demo/admin/innstillinger/" class="form">
+  <input type="hidden" name="_csrf" value="287c9a541e4f5a816e5db1b04af21bbafb3632225f8c2cef">
+  <div class="admin-cols">
+    <section class="panel">
+      <h2>Butikken</h2>
+      <label>Navn på butikken<input name="storeName" value="Sweetcharm" required></label>
+      <label>Slagord<input name="tagline" value="Hjemmelagde charms og tilbehør"></label>
+      <label>Kontakt-e-post<input type="email" name="contactEmail" value="hei@sweetcharm.no"></label>
+      <label>Vipps-nummer (vises etter bestilling)<input name="vippsNumber" value="" placeholder="f.eks. 123456"></label>
+      <div class="form__row">
+        <label>Fraktpris (kr)<input name="shippingCost" value="59" inputmode="decimal"></label>
+        <label>Fri frakt fra (kr, 0 = aldri)<input name="freeShippingFrom" value="600" inputmode="decimal"></label>
+      </div>
+      <label>Om oss-tekst<textarea name="aboutText" rows="6">Sweetcharm er en liten, hjemmelaget smykkebutikk. Hver charm og hvert tilbehør lages for hånd med kjærlighet, og ingen to deler er helt like. Fortell din historie med lag av charms, symboler og små detaljer som betyr noe spesielt for deg.</textarea></label>
+    </section>
+    <section class="panel">
+      <h2>Kategorier</h2>
+      <p class="muted small">Én kategori per linje. Rekkefølgen her er rekkefølgen i menyen.</p>
+      <label>Kategorier<textarea name="categories" rows="10">Charms
+Halskjeder
+Armbånd
+Øredobber
+Ringer
+Tilbehør</textarea></label>
+    </section>
+  </div>
+  <div class="form-actions"><button class="btn">Lagre innstillinger</button></div>
+</form>
+
+  </main>
+
+<script>window.DEMO={"base":"/sweetcharm-demo","page":"/admin/innstillinger","thanks":"/sweetcharm-demo/bestilling/02755b7acb83bdf7/","admin":"/sweetcharm-demo/admin/","cart":"/sweetcharm-demo/handlekurv/"}</script>
+<script src="/sweetcharm-demo/js/demo.js"></script>
+<script src="/sweetcharm-demo/js/main.js" defer></script>
+</body>
+</html>
+
